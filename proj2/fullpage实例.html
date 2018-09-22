@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <title>Title</title>
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css" rel="stylesheet">
+    <link href="style.css" rel='stylesheet'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" rel="stylesheet">
+    <script src="../jq/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
+</head>
+<body>
+     <div id="header">
+         <a href="#">Dansk</a>
+         <img src="img/logo.svg">
+     </div>
+     <div id="fullpage">
+         <div class="section section-1">
+             <div class="h2s wow animated slideInRight fast">
+                 <h2>Measurable results.</h2>
+                 <h2>Based in the data.</h2>
+                 <h2>Rooted in reality.</h2>
+             </div>
+             <div class="anchor">
+                 <a href="#page2"><p>scroll</p><i class="fa fa-angle-double-down fa-5x"></i></a>
+             </div>
+         </div>
+         <div class="section section-2" id="section-2">
+             <div class="slide slide-1">
+                  <div class="left wow animated slideInLeft fast">
+                      <img src="./img/fa18e55a.pen@2x.png">
+                  </div>
+                 <div class="right wow animated slideInRight fast">
+                     <h4>A unique approach to classical analysis </h4>
+                     <h2>We want to raise the bar</h2>
+                     <P>Raw Milk helps companies design and implement Customer Experience Management. We create customer experiences that are consistent and differentiated. That build loyalty. That create ambassadors.</P>
+                     <P>Based on your current situation and ambitions, we design unique solutions. Solutions, that are strategically founded, embedded into your organization, and that will be appreciated by your customers.</P>
+                     <P>When you’re dealing with Raw Milk, you’re dealing with the best there is. Our expertise is wide ranging and we design full-service solutions all the way from idea to implementation.</P>
+                 </div>
+             </div>
+             <div class="slide slide-2">
+                 <div class="left">
+                     <div class="btns wow animated slideInLeft fast">
+                         <div><a>Potential and strategy<i class="fa fa-angle-right"></i></a></div>
+                         <div><a>Voice of the Customer<i class="fa fa-angle-right"></i></a></div>
+                         <div><a>Insight, commitment and action<i class="fa fa-angle-right"></i></a></div>
+                         <div><a>Systems, processes and skills<i class="fa fa-angle-right"></i></a></div>
+                     </div>
+                 </div>
+                 <div class="right wow animated slideInRight fast">
+                     <h4>The customer is always at the center of our actions</h4>
+                     <h2>Customer Experience Management</h2>
+                     <p>CEM is all about delivering an excellent customer experience in every instance and not just in a selection of contact points. The ability to provide a full and valuable end-to-end experience is what gives a company its competitive edge.</p>
+                     <p>In order to succeed with CEM, an effective Voice of the Customer program is required along with a holistic and intuitive dissemination platform that creates insight, commitment and action among the employees.</p>
+                     <p>CEM is also about optimizing systems, processes and skills in order to have them support excellent customer experiences in every contact point.</p>
+                 </div>
+             </div>
+             <div class="slide slide-3">
+                 <div class="left wow animated slideInLeft fast">
+                     <img src="./img/5dc150f0.five@2x.png">
+                 </div>
+                 <div class="right wow animated slideInRight fast">
+                     <h4>CEM as the driver of growth</h4>
+                     <h2>How large is your unresolved potential?</h2>
+                     <p class="p1">CEM is about meeting or exceeding the expectations of the customers and thereby increasing both customer retention, turnover per customer and the extent of which customers will recommend your company to new customers.</p>
+                     <p class="p1">CEM also decreases costs for handling complaints, for sales and for marketing. Usually employees are also more productive as a by-product of CEM.</p>
+                     <p class="p1">If you wish to know what unfulfilled potential CEM can unlock in your company, please don’t hesitate to contact us. We would love to tell you more – no strings attached.</p>
+                     <p>You’ll find us </p>
+                 </div>
+             </div>
+         </div>
+         <div class="section section-3">
+             <div class="left wow animated slideInLeft fast">
+                    <img src="img/ce96c515.milk_platform@2x.png">
+             </div>
+             <div class="right wow animated slideInRight fast">
+                   <h4>Customer experiences - experienced real-time</h4>
+                   <h2>CEM-strategy operationalized</h2>
+                   <p>Get your results online and in real-time with our user friendly R3 dashboard – the most intelligent and intuitive dashboard on the market. R3 has been specifically designed to anchor customer surveys within organizations. Collect all your customer analyses in one simple tool and make them accessible across your organization with differentiated rights management.</p>
+                   <p class="p2">Contact us and let us demonstrate  R3 using key figures from your own company.</p>
+                   <form>
+                       <input type="text" placeholder="your username"><span></span>
+                       <input type="email" placeholder="your email"><span></span>
+                       <input type="submit" class="submit" value="SEND">
+                   </form>
+             </div>
+         </div>
+     </div>
+<script>
+    $(document).ready(function () {
+        $('#fullpage').fullpage({
+            anchors:['page1','page2','page3'],
+            fixedElements:'#header',
+            navigation:true,
+            navigationPosition:'left',
+            navigationTooltips:['Home','Service','R3 Dashboard'],
+            slidesNavigation:true,
+            slidesNavPosition:'bottom',
+            scrollBar: true,
+            controlArrows:true,
+            // afterLoad:function (anchorLink,index) {
+            //      switch (index){
+            //          case 1:
+            //              $(' .section-1 .h2s').show().addClass('animated slideInRight fast');
+            //             break;
+            //           case 2:
+            //              $('.section-2 .slide-1 img').show().addClass('animated slideInLeft fast');
+            //              $('.section-2 .slide-1 .right').show().addClass('animated slideInRight fast');
+            //              break;
+            //          case 3:
+            //              $(' .section-3 .left img').show().addClass('animated slideInLeft fast');
+            //              $('.section-3 .right').show().addClass('animated slideInRight fast');
+            //      }
+            // },
+            // onLeave:function (index,nextIndex,direction) {
+            //     switch (index){
+            //         case 1:
+            //             $(' .section-1 .h2s').removeClass('animated slideInRight fast').hide(1000);
+            //             break;
+            //         case 2:
+            //             $('.section-2 .slide-1 img').removeClass('animated slideInLeft fast').hide(1000);
+            //             $('.section-2 .slide-1 .right').removeClass('animated slideInRight fast').hide(1000);
+            //             break;
+            //         case 3:
+            //             $(' .section-3 .left img').removeClass('animated slideInLeft fast').hide(1000);
+            //             $(' .section-3 .right').removeClass('animated slideInRight fast').hide(1000);
+            //     }
+            // },
+            // afterSlideLoad:function (anchorLink,index,slideIndex,direction) {
+            //     if(index==2&&slideIndex==0){
+            //         $('.section-2 .slide-1 img').show().addClass('animated slideInLeft fast');
+            //         $('.section-2 .slide-1 .right').show().addClass('animated slideInRight fast');
+            //     }
+            //     if(index==2&&slideIndex==1){
+            //         $('.section-2 .slide-2 .btns').show().addClass('animated slideInLeft fast');
+            //         $('.section-2 .slide-2 .right').show().addClass('animated slideInRight fast');
+            //
+            //     }
+            //     if(index==2&&slideIndex==2){
+            //         $('.section-2 .slide-3 img').show().addClass('animated slideInLeft fast');
+            //         $('.section-2 .slide-3 .right').show().addClass('animated slideInRight fast');
+            //     }
+            // },
+            // onSlideLeave:function (anchorLink,index,slideIndex,direction) {
+            //     if(index==2&&slideIndex==0){
+            //         $('.section-2 .slide-1 img').removeClass('animated slideInLeft fast').hide(1000);
+            //         $('.section-2 .slide-1 .right').removeClass('animated slideInRight fast').hide(1000);
+            //     }
+            //     if(index==2&&slideIndex==1){
+            //         $('.section-2 .slide-2 .btns').removeClass('animated slideInLeft fast').hide(1000);
+            //         $('.section-2 .slide-2 .right').removeClass('animated slideInRight fast').hide(1000);
+            //     }
+            //     if(index==2&&slideIndex==2){
+            //         $('.section-2 .slide-3 img').removeClass('animated slideInLeft fast').hide(1000);
+            //         $('.section-2 .slide-3 .right').removeClass('animated slideInRight fast').hide(1000);
+            //     }
+            // }
+            afterRender:function () {
+                var wow=new WOW({
+                    animateClass:'animated'
+                });
+                wow.init();
+            }
+        });
+    })
+</script>
+</body>
+</html>
